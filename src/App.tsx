@@ -3,9 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import {UserInfo} from './user/User'
-
-function App() {
+function AppCopy() {
   const [count, setCount] = useState(0)
 
   return (
@@ -30,9 +28,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <UserInfo/>
     </>
   )
 }
 
-export default App
+export default AppCopy
