@@ -9,7 +9,11 @@ phases:
       - yarn install
   build:
     commands:
-      - yarn build
+      - |
+        aws amplify start-job \
+          --app-id d2f1nrbpx0jyl \
+          --branch-name main \
+          --job-type RELEASE
   post_build:
     commands:
       - echo "Build completed on $(date)"
